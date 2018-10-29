@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>主页</title><meta name="keywords" content="四川大学，信管，信息系统">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+
+    <link rel="shortcut icon" href="http://www.scu.edu.cn/images/favicon.png">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/pageSwitch.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html,body{
+        height: 100%;
+    }
+    #container {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+    }
+    .sections,.section {
+        height:100%;
+    }
+    #container,.sections {
+        position: relative;
+    }
+    .section {
+        background-color: #000;
+        background-size: cover;
+        background-position: 50% 50%;
+        text-align: center;
+        color: white;
+    }
+    #section0 {
+        background-image: url('/static/images1/1.jpg');
+    }
+    #section1 {
+        background-image: url('/static/images1/2.jpg');
+    }
+    #section2 {
+        background-image: url('/static/images1/3.jpg');
+    }
+    #section3 {
+        background-image: url('/static/images1/4.jpg');
+    }
+</style>
+</head>
+
+<body 12="">
+
+<div class="index">
+<div class="topBox">
+        <div class="topContainer">
+          <div class="head-right">
+               <ul class="hr-left">
+                     <li><a href="" target="_blank" title="">he!p</a></li>
+                     <li><a href="login/" target="_blank">登录</a></li>
+                     <li><a href="register/" target="_blank">注册</a></li>
+
+               </ul>
+               <div class="hr-right">
+                 <img src="/static/images/search.png" class="go-search" alt="">
+               </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="navBox">
+       <div class="nav-menu">
+           <a href="index.html"><img src="/static/images/nav-home.png"></a>
+            <ul class="nav">
+            <li style="display:none"><a href="index.html">首页</a></li>
+             <li><a href="#">学校概况</a></li>
+                <li><a href="#">学校概况</a></li>
+                <li><a href="#">学校概况</a></li>
+                <li><a href="#">学校概况</a></li>
+            </ul>
+       </div>
+    </div>
+
+<div id="container">
+    <div class="sections">
+        <div class="section" id="section0"></div>
+        <div class="section" id="section1"></div>
+        <div class="section" id="section2"></div>
+        <div class="section" id="section3"></div>
+    </div>
+</div>
+
+<script src="/static/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/static/js/pageSwitch.min.js"></script>
+<script>
+    $("#container").PageSwitch({
+        direction:'horizontal',
+        easing:'ease-in',
+        duration:1000,
+        autoPlay:true,
+        loop:'false'
+    });
+</script>
+    </div>
+
+{#    <div class="xskb">#}
+{#        <div class="xskbContainer">#}
+{#            <ul class="titlenav">#}
+{#                <li class="xskbnav">#}
+{#                    <a class="item01 fl" href="#" target="_blank">#}
+{#                      <div class="col-title">#}
+{#                        <i class="icon icon-xskb"></i>#}
+{#                        <span class="cn">失物招领/寻物启事</span>#}
+{#                      </div>#}
+{#                    </a>#}
+{#                </li>#}
+{##}
+{#                <li class="tzggnav">#}
+{#                    <a class="item02 fl" href="#" target="_blank">#}
+{#                      <div class="col-title">#}
+{#                        <i class="icon icon-tzgg"></i>#}
+{#                        <span class="cn">工作兼职</span>#}
+{#                      </div>#}
+{#                    </a>#}
+{#                </li>#}
+{##}
+{#                <li class="mtcdnav active">#}
+{#                    <a class="item03 fl" href="#" target="_blank">#}
+{#                      <div class="col-title">#}
+{#                        <i class="icon icon-mtcd"></i>#}
+{#                        <span class="cn">物品交易</span>#}
+{#                      </div>#}
+{#                    </a>#}
+{#                </li>#}
+{##}
+{#                <li class="mtcdnav">#}
+{#                    <a class="item04 fl" href="#">#}
+{#                      <div class="col-title">#}
+{#                        <i class="icon icon-mtcd"></i>#}
+{#                        <span class="cn">寻求帮助</span>#}
+{#                      </div>#}
+{#                    </a>#}
+{#                </li>#}
+{##}
+{#            </ul>#}
+{#            <div class="xskbtxt tabdiv" style="display: none;">#}
+{##}
+{#<ul class="list xs">#}
+{#<li>#}
+{#<div class="dl" style="background:url('/static/images/xs2.png') no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">21</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="Behind Language">Behind Language</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">Prof. Rudolph SOCK#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">望江校区汇文楼（东三教）213#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" >#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">21</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="同行评议之罪与SSCI之罚：舶来评价体系的是非功过与优化对策">同行评议之罪与SSCI之罚：舶来评价…</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">赵星#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">萃文楼（公共管理学院）206#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="background:url(images/xs-bg.png) no-repeat;">#}
+{# <p class="month">2018-10</p>#}
+{# <p class="date">25</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="社会工作实务研究与SSCI论文写作">社会工作实务研究与SSCI论文写作</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">沈文伟副教授 香港大学博士，现任香港理工大学应用社会科学系副教授。主要研究领域为青少年吸毒、网瘾、家庭治疗、灾后社会心理工作、社区减灾等。#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">萃文楼（公共管理学院）三楼会议室#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="background:url(images/xs-bg.png) no-repeat;">#}
+{# <p class="month">2018-10</p>#}
+{# <p class="date">25</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="中国的家庭社会工作与家庭治疗">中国的家庭社会工作与家庭治疗</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <!--2018年09月14日 09:59:55（<script>getWeek("2018年09月14日 09:59:55")</script>）09:59:55-->#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">沈文伟副教授 香港大学博士，现任香港理工大学应用社会科学系副教授。主要研究领域为青少年吸毒、网瘾、家庭治疗、灾后社会心理工作、社区减灾等。#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">萃文楼（公共管理学院）一楼报告厅#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="background:url(images/xs-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">25</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="公共图书馆信息建设推动职能转变">公共图书馆信息建设推动职能转变</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">郑蜀，四川省中心图书馆委员会办公室副主任#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">萃文楼（公共管理学院）306教室#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="background:url(images/xs-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">28</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="中美贸易摩擦原因、长短期影响和对策">中美贸易摩擦原因、长短期影响和对策</a>#}
+{# </div>#}
+{# <div class="l2">#}
+{#    <!--2018年09月11日 11:29:19（<script>getWeek("2018年09月11日 11:29:19")</script>）11:29:19-->#}
+{#    <img src="index_files/zjricon.png" class="xs-icon1" alt="">中央财经大学副教授 林发勤#}
+{# </div>#}
+{# <div class="l3">#}
+{#    <img src="index_files/xs2.png" class="xs-icon2" alt="">经纬楼北405学术报告厅#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#</ul>#}
+{#<b style="position: relative;right:10px;top:-20px;display:block;float:right;">#}
+{#<a href="#" target="_blank"><img src="index_files/more.png"></a>#}
+{#</b>#}
+{#            </div>#}
+{#            <div class="tzggtxt tabdiv" style="display:none">#}
+{#                <ul class="list tz">#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/tz-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">11</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于参加第三届全国高校网络教育优秀作品推选展示活动的通知" style="line-height:24px">关于参加第三届全国高校网络教育优秀作品推选展示活动的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/tz-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">10</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于2018年中秋节、国庆节放假有关事项的通知" style="line-height:24px">关于2018年中秋节、国庆节放假有关事项的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/tz-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">06</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于举办第三届四川大学大学生网络文化节的通知" style="line-height:24px">关于举办第三届四川大学大学生网络文化节的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">04</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于举行2018级本科生、研究生开学典礼的通知" style="line-height:24px">关于举行2018级本科生、研究生开学典礼的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">04</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于迎新期间江安校区实行交通管制的通知" style="line-height:24px">关于迎新期间江安校区实行交通管制的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li>#}
+{#<div class="dl" style="width:100px;height:80px;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">03</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1">#}
+{#    <a href="#" target="_blank" title="关于开展专项消防安全检查的通知" style="line-height:24px">关于开展专项消防安全检查的通知</a>#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#</ul>#}
+{#<b style="position: relative;right:10px;top:-20px;display:block;float:right;">#}
+{#<a href="#" target="_blank"><img src="index_files/more.png"></a>#}
+{#</b>#}
+{#            </div>#}
+{#<div class="mtcdtxt tabdiv" style="display: block;">#}
+{#<ul class="list mt">#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">17</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【四川新闻网】2018网络安全博览会：看川大在网络安全人才培养方面创新机制及成果" style="line-height:24px;">【四川新闻网】2018网络安全博览会：看川大在网络安全人才培养方面创新...</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【四川新闻网】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">15</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【四川新闻网】四川大学 泸州战略合作项目工作交流会举行" style="line-height:24px;">【四川新闻网】四川大学 泸州战略合作项目工作交流会举行</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【四川新闻网】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">12</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【四川日报】诺奖得主女科学家阿达·约纳特：希望与川大在化学医学领域合作" style="line-height:24px;">【四川日报】诺奖得主女科学家阿达·约纳特：希望与川大在化学医学领域合作</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【四川日报】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">08</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【央视新闻联播】四川大学：“小课堂”撬动的“大改革”" style="line-height:24px;">【央视新闻联播】四川大学：“小课堂”撬动的“大改革”</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【央视新闻联播】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-09</p>#}
+{# <p class="date">05</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【科技日报】细胞治疗等成果作价超八亿“孵出”新公司" style="line-height:24px;">【科技日报】细胞治疗等成果作价超八亿“孵出”新公司</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【科技日报】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#<li style="margin-bottom:53px;height: 92px;overflow: hidden;">#}
+{#<div class="dl" style="width:100px;height:80px;background:url(images/mt-bg.png) no-repeat;">#}
+{# <p class="month">2018-08</p>#}
+{# <p class="date">17</p>#}
+{#</div>#}
+{#<div class="dr">#}
+{# <div class="l1" style="height:57px;">#}
+{#    <a href="#" target="_blank" title="【中央电视台】中央电视台连续报道我校西藏阿里考古工作取得重大成果" style="line-height:24px;">【中央电视台】中央电视台连续报道我校西藏阿里考古工作取得重大成果</a>#}
+{# </div>#}
+{# <div class="l2" style="margin-top:5px">#}
+{#    【中央电视台】#}
+{# </div>#}
+{#</div>#}
+{#</li>#}
+{#</ul>#}
+{#<b style="position: relative;right:10px;top:-20px;display:block;float:right;">#}
+{#<a href="#" target="_blank"><img src="index_files/more.png" alt=""></a>#}
+{#</b><#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+    <div class="footer">
+
+<div class="backTop" id="backTop" style="display: none;"></div>
+
+
+<script src="/static/js/jquery.js"></script>
+
+
+<script>
+    /*导航滑动特效*/
+    $(document).scroll(function () {
+        var top = $(document).scrollTop();
+        if (top > 480) {
+            $(".navbar-fixed-top").show();
+        }else{
+            $(".navbar-fixed-top").hide();
+        }
+    });
+</script>
+<script>
+      //图片预加载效果
+      $("img.lazy").lazyload({
+           effect: "fadeIn",
+           threshold :200
+      });
+</script>
+<script>
+    $(".js-silder").silder({
+        auto: true,
+        speed: 20,
+        sideCtrl: true,
+        bottomCtrl: true,
+        defaultView: 0,
+        interval: 5000,
+        activeClass: "active",
+        preload:true
+    });
+</script>
+
+
+
+
+</div></body></html>
