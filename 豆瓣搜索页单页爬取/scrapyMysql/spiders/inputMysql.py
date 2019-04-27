@@ -25,8 +25,11 @@ class InputmysqlSpider(scrapy.Spider):
             item['title']=v.css('a::text').extract()
             item['score']=v.css('span.rating_nums::text').extract()
             item['tag']=v.css('span.subject-cast::text').extract()
-            # 数组转换为字符串
+            item['url']=str(v.css('h3>a').extract()).split(';')[0].split('"')[1]
+            item['pic_src']=str(v.css('a>img').extract()).split('"')[1]
+
             yield item  # 把取到的数据提交给pipline处理
+
         next_page = response.css('li.next a::attr(href)').extract_first()  # css选择器提取下一页链接
         if next_page is not None:  # 判断是否存在下一页
             next_page = response.urljoin(next_page)

@@ -17,11 +17,13 @@ class MySQLPipeline(object):
 
     def process_item(self, item, spider):
         self.cursor.execute(
-            """insert into music_1(title,score,tag,abstract) value (%s,%s,%s,%s)""",  # 纯属python操作mysql知识，不熟悉请恶补
+            """insert into music_1(title,score,tag,abstract,url,pic_src) value (%s,%s,%s,%s,%s,%s)""",  # 纯属python操作mysql知识，不熟悉请恶补
             (item['title'],
              item['score'],
              item['tag'],
-             item['abstract']))
+             item['abstract'],
+             item['url'],
+             item['pic_src']))
         # 提交sql语句
         self.connect.commit()
         return item  # 必须实现返回

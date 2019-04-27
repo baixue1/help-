@@ -21,5 +21,7 @@ class ScrapymysqlItem(scrapy.Item):
     score=scrapy.Field()
     tag=scrapy.Field()
     url=scrapy.Field()
-    abstract = scrapy.Field() # 名言内容
+    abstract = scrapy.Field()
+    pic_src=scrapy.Field()
+    # 名言内容
     pass
